@@ -8,10 +8,16 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
-
+class TableViewController: UITableViewController{
+    var users = ["Gonzalo Toledo","Kevin Flores","Jonathan Nolasco"]
+    var lastMessage = ["Hola","Hola","Hola"]
+    var cellImg = UIImage(named: "ico_seccion_contactar.png")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +35,26 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return users.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        cell.textLabel?.text = users[indexPath.row]
+        cell.detailTextLabel?.text = lastMessage[indexPath.row]
+        cell.imageView?.image = cellImg
+        
 
         // Configure the cell...
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -81,6 +90,8 @@ class TableViewController: UITableViewController {
         return true
     }
     */
+    //MArk: Extensions
+    
 
     /*
     // MARK: - Navigation
