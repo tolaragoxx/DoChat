@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC21C46E07300165A32 /* AppDelegate.swift */; };
+		EABA7AC51C46E07300165A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC41C46E07300165A32 /* ViewController.swift */; };
+		EABA7AC81C46E07300165A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7AC61C46E07300165A32 /* Main.storyboard */; };
+		EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */; };
+		EABA7ACD1C46E07300165A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACC1C46E07300165A32 /* Assets.xcassets */; };
+		EABA7AD01C46E07300165A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */; };
+		EABA7ADB1C46E07300165A32 /* DoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7ADA1C46E07300165A32 /* DoChatTests.swift */; };
+		EABA7AE61C46E07300165A32 /* DoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AE51C46E07300165A32 /* DoChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EABA7AD71C46E07300165A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABA7AB71C46E07200165A32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABA7ABE1C46E07300165A32;
+			remoteInfo = DoChat;
+		};
+		EABA7AE21C46E07300165A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABA7AB71C46E07200165A32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABA7ABE1C46E07300165A32;
+			remoteInfo = DoChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EABA7ABF1C46E07300165A32 /* DoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABA7AC21C46E07300165A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EABA7AC41C46E07300165A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EABA7AC71C46E07300165A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EABA7ACA1C46E07300165A32 /* DoChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoChat.xcdatamodel; sourceTree = "<group>"; };
+		EABA7ACC1C46E07300165A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EABA7ACF1C46E07300165A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EABA7AD11C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABA7AD61C46E07300165A32 /* DoChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABA7ADA1C46E07300165A32 /* DoChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoChatTests.swift; sourceTree = "<group>"; };
+		EABA7ADC1C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABA7AE51C46E07300165A32 /* DoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoChatUITests.swift; sourceTree = "<group>"; };
+		EABA7AE71C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EABA7ABC1C46E07300165A32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7AD31C46E07300165A32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7ADE1C46E07300165A32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EABA7AB61C46E07200165A32 = {
+			isa = PBXGroup;
+			children = (
+				EABA7AC11C46E07300165A32 /* DoChat */,
+				EABA7AD91C46E07300165A32 /* DoChatTests */,
+				EABA7AE41C46E07300165A32 /* DoChatUITests */,
+				EABA7AC01C46E07300165A32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EABA7AC01C46E07300165A32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EABA7ABF1C46E07300165A32 /* DoChat.app */,
+				EABA7AD61C46E07300165A32 /* DoChatTests.xctest */,
+				EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EABA7AC11C46E07300165A32 /* DoChat */ = {
+			isa = PBXGroup;
+			children = (
+				EABA7AC21C46E07300165A32 /* AppDelegate.swift */,
+				EABA7AC41C46E07300165A32 /* ViewController.swift */,
+				EABA7AC61C46E07300165A32 /* Main.storyboard */,
+				EABA7ACC1C46E07300165A32 /* Assets.xcassets */,
+				EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */,
+				EABA7AD11C46E07300165A32 /* Info.plist */,
+				EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */,
+			);
+			path = DoChat;
+			sourceTree = "<group>";
+		};
+		EABA7AD91C46E07300165A32 /* DoChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				EABA7ADA1C46E07300165A32 /* DoChatTests.swift */,
+				EABA7ADC1C46E07300165A32 /* Info.plist */,
+			);
+			path = DoChatTests;
+			sourceTree = "<group>";
+		};
+		EABA7AE41C46E07300165A32 /* DoChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EABA7AE51C46E07300165A32 /* DoChatUITests.swift */,
+				EABA7AE71C46E07300165A32 /* Info.plist */,
+			);
+			path = DoChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EABA7ABE1C46E07300165A32 /* DoChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABA7AEA1C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChat" */;
+			buildPhases = (
+				EABA7ABB1C46E07300165A32 /* Sources */,
+				EABA7ABC1C46E07300165A32 /* Frameworks */,
+				EABA7ABD1C46E07300165A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoChat;
+			productName = DoChat;
+			productReference = EABA7ABF1C46E07300165A32 /* DoChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EABA7AD51C46E07300165A32 /* DoChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABA7AED1C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatTests" */;
+			buildPhases = (
+				EABA7AD21C46E07300165A32 /* Sources */,
+				EABA7AD31C46E07300165A32 /* Frameworks */,
+				EABA7AD41C46E07300165A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EABA7AD81C46E07300165A32 /* PBXTargetDependency */,
+			);
+			name = DoChatTests;
+			productName = DoChatTests;
+			productReference = EABA7AD61C46E07300165A32 /* DoChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EABA7AE01C46E07300165A32 /* DoChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABA7AF01C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatUITests" */;
+			buildPhases = (
+				EABA7ADD1C46E07300165A32 /* Sources */,
+				EABA7ADE1C46E07300165A32 /* Frameworks */,
+				EABA7ADF1C46E07300165A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EABA7AE31C46E07300165A32 /* PBXTargetDependency */,
+			);
+			name = DoChatUITests;
+			productName = DoChatUITests;
+			productReference = EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EABA7AB71C46E07200165A32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = doapps;
+				TargetAttributes = {
+					EABA7ABE1C46E07300165A32 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EABA7AD51C46E07300165A32 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EABA7ABE1C46E07300165A32;
+					};
+					EABA7AE01C46E07300165A32 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EABA7ABE1C46E07300165A32;
+					};
+				};
+			};
+			buildConfigurationList = EABA7ABA1C46E07200165A32 /* Build configuration list for PBXProject "DoChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EABA7AB61C46E07200165A32;
+			productRefGroup = EABA7AC01C46E07300165A32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EABA7ABE1C46E07300165A32 /* DoChat */,
+				EABA7AD51C46E07300165A32 /* DoChatTests */,
+				EABA7AE01C46E07300165A32 /* DoChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EABA7ABD1C46E07300165A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABA7AD01C46E07300165A32 /* LaunchScreen.storyboard in Resources */,
+				EABA7ACD1C46E07300165A32 /* Assets.xcassets in Resources */,
+				EABA7AC81C46E07300165A32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7AD41C46E07300165A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7ADF1C46E07300165A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EABA7ABB1C46E07300165A32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABA7AC51C46E07300165A32 /* ViewController.swift in Sources */,
+				EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */,
+				EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7AD21C46E07300165A32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABA7ADB1C46E07300165A32 /* DoChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABA7ADD1C46E07300165A32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABA7AE61C46E07300165A32 /* DoChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EABA7AD81C46E07300165A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EABA7ABE1C46E07300165A32 /* DoChat */;
+			targetProxy = EABA7AD71C46E07300165A32 /* PBXContainerItemProxy */;
+		};
+		EABA7AE31C46E07300165A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EABA7ABE1C46E07300165A32 /* DoChat */;
+			targetProxy = EABA7AE21C46E07300165A32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EABA7AC61C46E07300165A32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABA7AC71C46E07300165A32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABA7ACF1C46E07300165A32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EABA7AE81C46E07300165A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EABA7AE91C46E07300165A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EABA7AEB1C46E07300165A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EABA7AEC1C46E07300165A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EABA7AEE1C46E07300165A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoChat.app/DoChat";
+			};
+			name = Debug;
+		};
+		EABA7AEF1C46E07300165A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoChat.app/DoChat";
+			};
+			name = Release;
+		};
+		EABA7AF11C46E07300165A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DoChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EABA7AF21C46E07300165A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DoChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EABA7ABA1C46E07200165A32 /* Build configuration list for PBXProject "DoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABA7AE81C46E07300165A32 /* Debug */,
+				EABA7AE91C46E07300165A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABA7AEA1C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABA7AEB1C46E07300165A32 /* Debug */,
+				EABA7AEC1C46E07300165A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EABA7AED1C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABA7AEE1C46E07300165A32 /* Debug */,
+				EABA7AEF1C46E07300165A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EABA7AF01C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABA7AF11C46E07300165A32 /* Debug */,
+				EABA7AF21C46E07300165A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EABA7ACA1C46E07300165A32 /* DoChat.xcdatamodel */,
+			);
+			currentVersion = EABA7ACA1C46E07300165A32 /* DoChat.xcdatamodel */;
+			path = DoChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EABA7AB71C46E07200165A32 /* Project object */;
+}
