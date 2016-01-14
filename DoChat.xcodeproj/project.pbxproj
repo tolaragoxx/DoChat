@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA5CB5571C480A760075240E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB5561C480A760075240E /* User.swift */; };
+		EA5CB5591C480B2E0075240E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */; };
+		EA5CB55B1C480C300075240E /* ContactsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */; };
 		EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC21C46E07300165A32 /* AppDelegate.swift */; };
-		EABA7AC51C46E07300165A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC41C46E07300165A32 /* ViewController.swift */; };
 		EABA7AC81C46E07300165A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7AC61C46E07300165A32 /* Main.storyboard */; };
 		EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */; };
 		EABA7ACD1C46E07300165A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACC1C46E07300165A32 /* Assets.xcassets */; };
 		EABA7AD01C46E07300165A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */; };
 		EABA7ADB1C46E07300165A32 /* DoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7ADA1C46E07300165A32 /* DoChatTests.swift */; };
 		EABA7AE61C46E07300165A32 /* DoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AE51C46E07300165A32 /* DoChatUITests.swift */; };
-		EABA7AF41C46F87700165A32 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AF31C46F87700165A32 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA5CB5561C480A760075240E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsDetailViewController.swift; sourceTree = "<group>"; };
 		EABA7ABF1C46E07300165A32 /* DoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABA7AC21C46E07300165A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EABA7AC41C46E07300165A32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EABA7AC71C46E07300165A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EABA7ACA1C46E07300165A32 /* DoChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoChat.xcdatamodel; sourceTree = "<group>"; };
 		EABA7ACC1C46E07300165A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABA7AE51C46E07300165A32 /* DoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoChatUITests.swift; sourceTree = "<group>"; };
 		EABA7AE71C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EABA7AF31C46F87700165A32 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				EABA7AC21C46E07300165A32 /* AppDelegate.swift */,
-				EABA7AC41C46E07300165A32 /* ViewController.swift */,
 				EABA7AC61C46E07300165A32 /* Main.storyboard */,
 				EABA7ACC1C46E07300165A32 /* Assets.xcassets */,
 				EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */,
 				EABA7AD11C46E07300165A32 /* Info.plist */,
 				EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */,
-				EABA7AF31C46F87700165A32 /* TableViewController.swift */,
+				EA5CB5561C480A760075240E /* User.swift */,
+				EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */,
+				EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */,
 			);
 			path = DoChat;
 			sourceTree = "<group>";
@@ -262,10 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EABA7AC51C46E07300165A32 /* ViewController.swift in Sources */,
+				EA5CB5571C480A760075240E /* User.swift in Sources */,
+				EA5CB55B1C480C300075240E /* ContactsDetailViewController.swift in Sources */,
+				EA5CB5591C480B2E0075240E /* ContactsTableViewController.swift in Sources */,
 				EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */,
 				EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */,
-				EABA7AF41C46F87700165A32 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +496,7 @@
 				EABA7AEC1C46E07300165A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EABA7AED1C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				EABA7AEF1C46E07300165A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EABA7AF01C46E07300165A32 /* Build configuration list for PBXNativeTarget "DoChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				EABA7AF21C46E07300165A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

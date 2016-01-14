@@ -1,24 +1,26 @@
 //
-//  TableViewController.swift
+//  ContactsTableViewController.swift
 //  DoChat
 //
-//  Created by Gonzalo on 13/01/16.
+//  Created by Gonzalo on 14/01/16.
 //  Copyright © 2016 doapps. All rights reserved.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController{
-    var contactViewController: ContactViewController? = nil
-    var users = ["Gonzalo Toledo","Kevin Flores","Jonathan Nolasco"]
-    var lastMessage = ["Hola","Hola","Hola"]
-    var cellImg = UIImage(named: "ico_seccion_contactar")
-    
-    
+class ContactsTableViewController: UITableViewController {
+    var contactsDetailViewController: ContactsDetailViewController? = nil
+    var contacts = [User]()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        contacts = [
+            User(name: "Gonzalo Toledo", number: "+51999888777"),
+            User(name: "Kevin Flores", number: "+51987654321"),
+            User(name: "Jonathan Nolasco", number: "+51999777555")
+        ]
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,21 +43,33 @@ class TableViewController: UITableViewController{
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return users.count
+        return contacts.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = users[indexPath.row]
-        cell.detailTextLabel?.text = lastMessage[indexPath.row]
-        cell.imageView?.image = cellImg
-        
+        let contact = contacts[indexPath.row]
+        cell.textLabel?.text = contact.name
+        let image = UIImage(named: contact.name)
+        cell.imageView?.image = image
 
         // Configure the cell...
 
         return cell
     }
+    // MARK: - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let contact = contacts[indexPath.row]
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ContactsDetailViewController
+                controller.detailContact = contact
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,8 +105,6 @@ class TableViewController: UITableViewController{
         return true
     }
     */
-    //MArk: Extensions
-    
 
     /*
     // MARK: - Navigation
@@ -104,4 +116,5 @@ class TableViewController: UITableViewController{
     }
     */
 
+    }
 }
