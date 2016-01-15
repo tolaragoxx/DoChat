@@ -8,14 +8,50 @@
 
 import UIKit
 
-class MessageDetailViewController: UIViewController {
+class MessageDetailViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    var messages = ["Hola","k ases","Hola papu"]
+    var hora = ["11:59","12:00","00:00"]
+    @IBOutlet weak var messageTable: UITableView!
+    @IBOutlet weak var newMessage: UITextField!
+    var detailContact: User? {
+        didSet {
+            configureView()
+        }
+    }
+    
+    func configureView() {
+        if let detailContact = detailContact {
+            if let messageTable = messageTable, newMessage = newMessage{
+                title = detailContact.name
+            }
+        }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureView()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func send(sender: UIButton) {
+    }
+    //MARK: Table
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return messages.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        cell.textLabel?.text = messages[indexPath.row]
+        cell.detailTextLabel?.text = hora[indexPath.row]
+        // Configure the cell...
+        
+        return cell
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

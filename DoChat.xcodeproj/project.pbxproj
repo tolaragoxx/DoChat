@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA5CB5571C480A760075240E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB5561C480A760075240E /* User.swift */; };
 		EA5CB5591C480B2E0075240E /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */; };
-		EA5CB55B1C480C300075240E /* ContactsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */; };
+		EA5CB55B1C480C300075240E /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CB55A1C480C300075240E /* ContactDetailViewController.swift */; };
 		EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC21C46E07300165A32 /* AppDelegate.swift */; };
 		EABA7AC81C46E07300165A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7AC61C46E07300165A32 /* Main.storyboard */; };
 		EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */; };
@@ -17,7 +17,7 @@
 		EABA7AD01C46E07300165A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */; };
 		EABA7ADB1C46E07300165A32 /* DoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7ADA1C46E07300165A32 /* DoChatTests.swift */; };
 		EABA7AE61C46E07300165A32 /* DoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AE51C46E07300165A32 /* DoChatUITests.swift */; };
-		EAF02F3B1C49820C00F51346 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */; };
+		EAF02F3B1C49820C00F51346 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF02F3A1C49820C00F51346 /* MessagesTableViewController.swift */; };
 		EAF02F3D1C49823100F51346 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		EA5CB5561C480A760075240E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
-		EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsDetailViewController.swift; sourceTree = "<group>"; };
+		EA5CB55A1C480C300075240E /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 		EABA7ABF1C46E07300165A32 /* DoChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABA7AC21C46E07300165A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABA7AC71C46E07300165A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABA7AE51C46E07300165A32 /* DoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoChatUITests.swift; sourceTree = "<group>"; };
 		EABA7AE71C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		EAF02F3A1C49820C00F51346 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,8 +115,8 @@
 				EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */,
 				EA5CB5561C480A760075240E /* User.swift */,
 				EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */,
-				EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */,
-				EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */,
+				EA5CB55A1C480C300075240E /* ContactDetailViewController.swift */,
+				EAF02F3A1C49820C00F51346 /* MessagesTableViewController.swift */,
 				EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */,
 			);
 			path = DoChat;
@@ -272,11 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5CB5571C480A760075240E /* User.swift in Sources */,
-				EA5CB55B1C480C300075240E /* ContactsDetailViewController.swift in Sources */,
+				EA5CB55B1C480C300075240E /* ContactDetailViewController.swift in Sources */,
 				EA5CB5591C480B2E0075240E /* ContactsTableViewController.swift in Sources */,
 				EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */,
 				EAF02F3D1C49823100F51346 /* MessageDetailViewController.swift in Sources */,
-				EAF02F3B1C49820C00F51346 /* MessageTableViewController.swift in Sources */,
+				EAF02F3B1C49820C00F51346 /* MessagesTableViewController.swift in Sources */,
 				EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

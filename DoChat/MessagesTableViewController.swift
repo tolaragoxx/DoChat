@@ -8,45 +8,73 @@
 
 import UIKit
 
-class MessageTableViewController: UITableViewController {
-
+class MessagesTableViewController: UITableViewController {
+    var messageDetailViewController: MessageDetailViewController? = nil
+    var contacts = [User]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        contacts = [
+            User(name: "Gonzalo Toledo", number: "+51999888777"),
+            User(name: "Kevin Flores", number: "+51987654321"),
+            User(name: "Jonathan Nolasco", number: "+51999777555")
+        ]
+        if let splitViewController = splitViewController {
+            let controllers = splitViewController.viewControllers
+            messageDetailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? MessageDetailViewController
+        }
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return contacts.count
     }
-
-    /*
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let contact = contacts[indexPath.row]
+        cell.textLabel?.text = contact.name
+        let image = UIImage(named: contact.name)
+        cell.imageView?.image = image
+        cell.detailTextLabel?.text = "Hola papu"
+        
         // Configure the cell...
-
+        
         return cell
     }
-    */
-
+    // MARK: - Segues
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showMessage" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let contact = contacts[indexPath.row]
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! MessageDetailViewController
+                controller.detailContact = contact
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

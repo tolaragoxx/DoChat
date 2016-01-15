@@ -13,7 +13,7 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
-    var contactsDetailViewController: ContactsDetailViewController? = nil
+    var contactDetailViewController: ContactDetailViewController? = nil
     var contacts = [User]()
 
 
@@ -26,9 +26,10 @@ class ContactsTableViewController: UITableViewController {
         ]
         if let splitViewController = splitViewController {
             let controllers = splitViewController.viewControllers
-            contactsDetailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? ContactsDetailViewController
+            contactDetailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? ContactDetailViewController
         }
 
+       
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,7 +41,7 @@ class ContactsTableViewController: UITableViewController {
         clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -75,12 +76,13 @@ class ContactsTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let contact = contacts[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ContactsDetailViewController
+                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ContactDetailViewController
                 controller.detailContact = contact
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
+    }
     
 
     /*
@@ -128,5 +130,5 @@ class ContactsTableViewController: UITableViewController {
     }
     */
 
-    }
+   
 }
