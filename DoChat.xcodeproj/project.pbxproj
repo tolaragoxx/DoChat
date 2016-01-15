@@ -17,6 +17,8 @@
 		EABA7AD01C46E07300165A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABA7ACE1C46E07300165A32 /* LaunchScreen.storyboard */; };
 		EABA7ADB1C46E07300165A32 /* DoChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7ADA1C46E07300165A32 /* DoChatTests.swift */; };
 		EABA7AE61C46E07300165A32 /* DoChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABA7AE51C46E07300165A32 /* DoChatUITests.swift */; };
+		EAF02F3B1C49820C00F51346 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */; };
+		EAF02F3D1C49823100F51346 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		EABA7AE11C46E07300165A32 /* DoChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABA7AE51C46E07300165A32 /* DoChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoChatUITests.swift; sourceTree = "<group>"; };
 		EABA7AE71C46E07300165A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				EA5CB5561C480A760075240E /* User.swift */,
 				EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */,
 				EA5CB55A1C480C300075240E /* ContactsDetailViewController.swift */,
+				EAF02F3A1C49820C00F51346 /* MessageTableViewController.swift */,
+				EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */,
 			);
 			path = DoChat;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				EA5CB55B1C480C300075240E /* ContactsDetailViewController.swift in Sources */,
 				EA5CB5591C480B2E0075240E /* ContactsTableViewController.swift in Sources */,
 				EABA7ACB1C46E07300165A32 /* DoChat.xcdatamodeld in Sources */,
+				EAF02F3D1C49823100F51346 /* MessageDetailViewController.swift in Sources */,
+				EAF02F3B1C49820C00F51346 /* MessageTableViewController.swift in Sources */,
 				EABA7AC31C46E07300165A32 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -427,7 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.DoChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

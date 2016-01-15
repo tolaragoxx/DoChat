@@ -1,44 +1,23 @@
 //
-//  ContactsTableViewController.swift
+//  MessageTableViewController.swift
 //  DoChat
 //
-//  Created by Gonzalo on 14/01/16.
+//  Created by Gonzalo on 15/01/16.
 //  Copyright © 2016 doapps. All rights reserved.
-
-//GONZALON
-
-//HOLAAAAIHDFISKRNG
-
+//
 
 import UIKit
 
-class ContactsTableViewController: UITableViewController {
-    var contactsDetailViewController: ContactsDetailViewController? = nil
-    var contacts = [User]()
-
+class MessageTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        contacts = [
-            User(name: "Gonzalo Toledo", number: "+51999888777"),
-            User(name: "Kevin Flores", number: "+51987654321"),
-            User(name: "Jonathan Nolasco", number: "+51999777555")
-        ]
-        if let splitViewController = splitViewController {
-            let controllers = splitViewController.viewControllers
-            contactsDetailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? ContactsDetailViewController
-        }
-
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    override func viewWillAppear(animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.collapsed
-        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,38 +29,23 @@ class ContactsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return contacts.count
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        let contact = contacts[indexPath.row]
-        cell.textLabel?.text = contact.name
-        let image = UIImage(named: contact.name)
-        cell.imageView?.image = image
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    // MARK: - Segues
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                let contact = contacts[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ContactsDetailViewController
-                controller.detailContact = contact
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -128,5 +92,4 @@ class ContactsTableViewController: UITableViewController {
     }
     */
 
-    }
 }
