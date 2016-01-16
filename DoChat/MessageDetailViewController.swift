@@ -13,24 +13,15 @@ class MessageDetailViewController: UIViewController,UITableViewDataSource,UITabl
     var hora = ["11:59","12:00","00:00"]
     @IBOutlet weak var messageTable: UITableView!
     @IBOutlet weak var newMessage: UITextField!
-    var detailContact: User? {
-        didSet {
-            configureView()
-        }
-    }
+    var detailContact: User?
+   
     
-    func configureView() {
-        if let detailContact = detailContact {
-            if let messageTable = messageTable, newMessage = newMessage{
-                title = detailContact.name
-            }
-        }
-    }
-
+   
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
+        title = detailContact?.name
         // Do any additional setup after loading the view.
     }
 

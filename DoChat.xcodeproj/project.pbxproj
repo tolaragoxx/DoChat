@@ -84,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA423F7B1C4AB26400F32E0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */,
+				EA5CB55A1C480C300075240E /* ContactDetailViewController.swift */,
+				EAF02F3A1C49820C00F51346 /* MessagesTableViewController.swift */,
+				EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		EABA7AB61C46E07200165A32 = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +125,7 @@
 				EABA7AD11C46E07300165A32 /* Info.plist */,
 				EABA7AC91C46E07300165A32 /* DoChat.xcdatamodeld */,
 				EA5CB5561C480A760075240E /* User.swift */,
-				EA5CB5581C480B2E0075240E /* ContactsTableViewController.swift */,
-				EA5CB55A1C480C300075240E /* ContactDetailViewController.swift */,
-				EAF02F3A1C49820C00F51346 /* MessagesTableViewController.swift */,
-				EAF02F3C1C49823100F51346 /* MessageDetailViewController.swift */,
+				EA423F7B1C4AB26400F32E0A /* Controllers */,
 			);
 			path = DoChat;
 			sourceTree = "<group>";

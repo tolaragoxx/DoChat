@@ -14,25 +14,17 @@ class ContactDetailViewController: UIViewController {
     @IBOutlet weak var contactNumber: UILabel!
     @IBOutlet weak var contactImageView: UIImageView!
     
-    var detailContact: User? {
-        didSet {
-            configureView()
-        }
-    }
+    var detailContact: User?
     
-    func configureView() {
-        if let detailContact = detailContact {
-            if let contactNumber = contactNumber, contactImageView = contactImageView {
-                contactNumber.text = detailContact.number
-                contactImageView.image = UIImage(named: detailContact.name)
-                title = detailContact.name
-            }
-        }
-    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureView()
+        contactNumber.text = detailContact!.number
+        contactImageView.image = UIImage(named: detailContact!.name)
+        title = detailContact!.name
+
         // Do any additional setup after loading the view.
     }
 

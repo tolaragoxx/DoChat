@@ -24,11 +24,7 @@ class ContactsTableViewController: UITableViewController {
             User(name: "Kevin Flores", number: "+51987654321"),
             User(name: "Jonathan Nolasco", number: "+51999777555")
         ]
-        if let splitViewController = splitViewController {
-            let controllers = splitViewController.viewControllers
-            contactDetailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? ContactDetailViewController
-        }
-
+        
        
 
         // Uncomment the following line to preserve selection between presentations
@@ -37,11 +33,6 @@ class ContactsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    override func viewWillAppear(animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.collapsed
-        super.viewWillAppear(animated)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -76,10 +67,8 @@ class ContactsTableViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let contact = contacts[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! ContactDetailViewController
+                let controller = segue.destinationViewController as! ContactDetailViewController
                 controller.detailContact = contact
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
